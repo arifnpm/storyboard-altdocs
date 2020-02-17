@@ -22,7 +22,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 /* eslint-disable import/no-extraneous-dependencies */
-var mdx_compiler_plugin_1 = __importDefault(require("../../../mdx-compiler-plugin"));
+var mdx_compiler_plugin_1 = __importDefault(require("storyboard-altdocs/mdx-compiler-plugin"));
 var remark_slug_1 = __importDefault(require("remark-slug"));
 var remark_external_links_1 = __importDefault(require("remark-external-links"));
 function createBabelOptions(babelOptions, configureJSX) {
