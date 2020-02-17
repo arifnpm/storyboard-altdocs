@@ -1,0 +1,35 @@
+/package
+*.tgz
+
+.out
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+
+# OSX
+*.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# Node
+logs
+*.log
+npm-debug.log*
+pids
+*.pid
+*.seed
+
+# npm
+node_modules
+.npm

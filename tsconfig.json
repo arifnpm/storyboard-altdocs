@@ -1,0 +1,32 @@
+{
+  "name": "cl-sb-docs",
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": ".",
+    "incremental": false,
+    "noImplicitAny": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "jsx": "react",
+    "module": "commonjs",
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "target": "es5",
+    "types": ["webpack-env", "jest"],
+    "lib": ["es2017", "dom"],
+    "rootDir": "./src",
+    "allowJs": true,
+  },
+  "include": ["src/**/*"],
+  "exclude": [
+    "**/dist",
+    "node_modules",
+    "**/node_modules",
+    "**/*.spec.ts",
+    "**/__tests__",
+    "**/*.test.ts",
+    "src/**.test.ts"
+  ]
+}
