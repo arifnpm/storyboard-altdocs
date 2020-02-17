@@ -2,7 +2,7 @@
 
 exports[`docs-mdx-compiler-plugin story-function.mdx 1`] = `
 "/* @jsx mdx */
-import { assertIsFn, AddContext } from 'cl-sb-docs/blocks';
+import { assertIsFn, AddContext } from 'storyboard-altdocs/blocks';
 
 const makeShortcode = name =>
   function MDXDefaultShortcode(props) {

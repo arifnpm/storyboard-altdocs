@@ -12,7 +12,7 @@ export default function transformer(file, api) {
   let presetOptions = null;
   if (frameworks.length !== 1) {
     err = `${frameworks.length === 0 ? 'No' : 'Multiple'} frameworks found: ${frameworks}`;
-    logger.error(`${err}, please configure 'cl-sb-docs' manually.`);
+    logger.error(`${err}, please configure 'storyboard-altdocs' manually.`);
     return file.source;
   }
 
@@ -33,7 +33,7 @@ export default function transformer(file, api) {
   const j = api.jscodeshift;
   const root = j(file.source);
 
-  presetsAddPreset(`cl-sb-docs/preset`, presetOptions, { root, api });
+  presetsAddPreset(`storyboard-altdocs/preset`, presetOptions, { root, api });
 
   return root.toSource({ quote: 'single' });
 }

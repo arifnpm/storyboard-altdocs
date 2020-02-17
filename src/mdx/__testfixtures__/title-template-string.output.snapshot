@@ -2,9 +2,9 @@
 
 exports[`docs-mdx-compiler-plugin title-template-string.mdx 1`] = `
 "/* @jsx mdx */
-import { assertIsFn, AddContext } from 'cl-sb-docs/blocks';
+import { assertIsFn, AddContext } from 'storyboard-altdocs/blocks';
 
-import { Meta, Story } from 'cl-sb-docs/blocks';
+import { Meta, Story } from 'storyboard-altdocs/blocks';
 import { titleFunction } from '../title-generators';
 
 const makeShortcode = name =>

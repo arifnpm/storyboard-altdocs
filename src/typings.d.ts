@@ -1,6 +1,6 @@
 declare module '@mdx-js/react';
-declare module 'cl-sb-docs/mdx-compiler-plugin';
-declare module 'cl-sb-docs/blocks';
+declare module 'storyboard-altdocs/mdx-compiler-plugin';
+declare module 'storyboard-altdocs/blocks';
 declare module 'global';
 declare module 'react-is';
 declare module '@egoist/vue-to-react';

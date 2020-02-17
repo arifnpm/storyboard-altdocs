@@ -20,14 +20,14 @@ To learn more about Storybook Docs, read the [general documentation](../README.m
 First add the package. Make sure that the versions for your `@storybook/*` packages match:
 
 ```sh
-yarn add -D cl-sb-docs@next
+yarn add -D storyboard-altdocs@next
 ```
 
 Then add the following to your `.storybook/main.js` addons:
 
 ```js
 module.exports = {
-  addons: ['cl-sb-docs'],
+  addons: ['storyboard-altdocs'],
 };
 ```
 
@@ -80,7 +80,7 @@ module.exports = {
 Finally, you can create MDX files like this:
 
 ```md
-import { Meta, Story, Props } from 'cl-sb-docs/blocks';
+import { Meta, Story, Props } from 'storyboard-altdocs/blocks';
 import { InfoButton } from './InfoButton.vue';
 
 <Meta title='InfoButton' component={InfoButton} />

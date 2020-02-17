@@ -56,7 +56,7 @@ basic.story = {
 **Button.stories.mdx**
 
 ```md
-import { Meta, Story } from 'cl-sb-docs/blocks';
+import { Meta, Story } from 'storyboard-altdocs/blocks';
 import * as stories from './Button.stories.js';
 import { SomeComponent } from 'path/to/SomeComponent';
 
@@ -85,7 +85,7 @@ We recommend [MDX Docs](#csf-stories-with-mdx-docs) as the most ergonomic way to
 **Button.mdx**
 
 ```md
-import { Story } from 'cl-sb-docs/blocks';
+import { Story } from 'storyboard-altdocs/blocks';
 import { SomeComponent } from 'somewhere';
 
 # Button

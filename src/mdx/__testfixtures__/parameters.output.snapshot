@@ -2,10 +2,10 @@
 
 exports[`docs-mdx-compiler-plugin parameters.mdx 1`] = `
 "/* @jsx mdx */
-import { assertIsFn, AddContext } from 'cl-sb-docs/blocks';
+import { assertIsFn, AddContext } from 'storyboard-altdocs/blocks';
 
 import { Button } from '@storybook/react/demo';
-import { Story, Meta } from 'cl-sb-docs/blocks';
+import { Story, Meta } from 'storyboard-altdocs/blocks';
 
 const makeShortcode = name =>
   function MDXDefaultShortcode(props) {

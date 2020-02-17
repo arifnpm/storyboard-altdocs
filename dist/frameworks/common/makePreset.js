@@ -18,7 +18,7 @@ var util_deprecate_1 = __importDefault(require("util-deprecate"));
 var ts_dedent_1 = __importDefault(require("ts-dedent"));
 var common = __importStar(require("../../preset"));
 var makePreset = function (framework) {
-    util_deprecate_1.default(function () { }, ts_dedent_1.default(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n    Framework-specific presets are no longer-needed as of Storybook 5.3 and will be removed in 6.0.\n\n    Please use 'cl-sb-docs/preset' instead of 'cl-sb-docs/", "/preset'.\n  "], ["\n    Framework-specific presets are no longer-needed as of Storybook 5.3 and will be removed in 6.0.\n\n    Please use 'cl-sb-docs/preset' instead of 'cl-sb-docs/", "/preset'.\n  "])), framework))();
+    util_deprecate_1.default(function () { }, ts_dedent_1.default(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n    Framework-specific presets are no longer-needed as of Storybook 5.3 and will be removed in 6.0.\n\n    Please use 'storyboard-altdocs/preset' instead of 'storyboard-altdocs/", "/preset'.\n  "], ["\n    Framework-specific presets are no longer-needed as of Storybook 5.3 and will be removed in 6.0.\n\n    Please use 'storyboard-altdocs/preset' instead of 'storyboard-altdocs/", "/preset'.\n  "])), framework))();
     return common;
 };
 exports.default = makePreset;

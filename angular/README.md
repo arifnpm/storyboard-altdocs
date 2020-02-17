@@ -19,14 +19,14 @@ To learn more about Storybook Docs, read the [general documentation](../README.m
 First add the package. Make sure that the versions for your `@storybook/*` packages match:
 
 ```sh
-yarn add -D cl-sb-docs@next
+yarn add -D storyboard-altdocs@next
 ```
 
 Then add the following to your `.storybook/main.js` exports:
 
 ```js
 module.exports = {
-  addons: ['cl-sb-docs'],
+  addons: ['storyboard-altdocs'],
 };
 ```
 
@@ -60,7 +60,7 @@ Unfortunately, it's not currently possible to update this dynamically as you edi
 Next, add the following to `.storybook/preview.ts` to load the Compodoc-generated file:
 
 ```js
-import { setCompodocJson } from 'cl-sb-docs/angular';
+import { setCompodocJson } from 'storyboard-altdocs/angular';
 import docJson from '../documentation.json';
 setCompodocJson(docJson);
 ```
@@ -108,7 +108,7 @@ module.exports = {
 Finally, you can create MDX files like this:
 
 ```md
-import { Meta, Story, Props } from 'cl-sb-docs/blocks';
+import { Meta, Story, Props } from 'storyboard-altdocs/blocks';
 import { AppComponent } from './app.component';
 
 <Meta title='App Component' component={AppComponent} />

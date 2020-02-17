@@ -1,5 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import createCompiler from 'cl-sb-docs/mdx-compiler-plugin';
+import createCompiler from 'storyboard-altdocs/mdx-compiler-plugin';
 import remarkSlug from 'remark-slug';
 import remarkExternalLinks from 'remark-external-links';
 

@@ -44,7 +44,7 @@ For more information on how it works, see the [`DocsPage` reference](./docs/docs
 Here's an example file:
 
 ```md
-import { Meta, Story, Preview } from 'cl-sb-docs/blocks';
+import { Meta, Story, Preview } from 'storyboard-altdocs/blocks';
 import { Checkbox } from './Checkbox';
 
 <Meta title="MDX/Checkbox" component={Checkbox} />
@@ -97,7 +97,7 @@ Want to add enhanced features to your favorite framework? Check out this [dev gu
 First add the package. Make sure that the versions for your `@storybook/*` packages match:
 
 ```sh
-yarn add -D cl-sb-docs
+yarn add -D storyboard-altdocs
 ```
 
 Docs has peer dependencies on `react`, `react-is`, and `babel-loader`. If you want to write stories in MDX, you may need to add these dependencies as well:
@@ -111,7 +111,7 @@ Then add the following to your `.storybook/main.js`:
 ```js
 module.exports = {
   stories: ['../src/**/*.stories.(js|mdx)'],
-  addons: ['cl-sb-docs'],
+  addons: ['storyboard-altdocs'],
 };
 ```
 
@@ -124,7 +124,7 @@ Add the following to your Jest configuration:
 {
   "transform": {
     "^.+\\.[tj]sx?$": "babel-jest",
-    "^.+\\.mdx$": "cl-sb-docs/jest-transform-mdx"
+    "^.+\\.mdx$": "storyboard-altdocs/jest-transform-mdx"
   }
 }
 ```
@@ -145,7 +145,7 @@ The `addon-docs` preset has a few configuration options that can be used to conf
 module.exports = {
   addons: [
     {
-      name: 'cl-sb-docs',
+      name: 'storyboard-altdocs',
       options: {
         configureJSX: true,
         babelOptions: {},
@@ -165,12 +165,12 @@ The `configureJSX` option is useful when you're writing your docs in MDX and you
 If you don't want to use the preset, and prefer to configure "the long way" add the following configuration to `.storybook/main.js` (see comments inline for explanation):
 
 ```js
-const createCompiler = require('cl-sb-docs/mdx-compiler-plugin');
+const createCompiler = require('storyboard-altdocs/mdx-compiler-plugin');
 
 module.exports = {
-  // 1. register the docs panel (as opposed to 'cl-sb-docs' which
+  // 1. register the docs panel (as opposed to 'storyboard-altdocs' which
   //    will configure everything with a preset)
-  addons: ['cl-sb-docs/register'],
+  addons: ['storyboard-altdocs/register'],
   // 2. manually configure webpack, since you're not using the preset
   webpackFinal: async config => {
     config.module.rules.push({
@@ -210,7 +210,7 @@ Finally, you'll need to set up DocsPage in `.storybook/preview.js`:
 
 ```js
 import { addParameters } from '@storybook/react';
-import { DocsPage, DocsContainer } from 'cl-sb-docs/blocks';
+import { DocsPage, DocsContainer } from 'storyboard-altdocs/blocks';
 
 addParameters({
   docs: {

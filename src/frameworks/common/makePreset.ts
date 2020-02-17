@@ -8,7 +8,7 @@ const makePreset = (framework: string) => {
     dedent`
     Framework-specific presets are no longer-needed as of Storybook 5.3 and will be removed in 6.0.
 
-    Please use 'cl-sb-docs/preset' instead of 'cl-sb-docs/${framework}/preset'.
+    Please use 'storyboard-altdocs/preset' instead of 'storyboard-altdocs/${framework}/preset'.
   `
   )();
   return common;

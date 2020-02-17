@@ -308,7 +308,7 @@ function extractExports(node, options) {
     }
     metaExport.includeStories = JSON.stringify(includeStories);
     var fullJsx = __spreadArrays([
-        'import { assertIsFn, AddContext } from "cl-sb-docs/blocks";',
+        'import { assertIsFn, AddContext } from "storyboard-altdocs/blocks";',
         defaultJsx
     ], storyExports, [
         "const componentMeta = " + stringifyMeta(metaExport) + ";",
