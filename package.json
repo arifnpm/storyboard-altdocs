@@ -39,7 +39,7 @@
     "@storybook/addons": "5.3.13",
     "@storybook/api": "5.3.13",
     "@storybook/client-api": "5.3.13",
-    "@storybook/components": "5.3.13",
+    "@storybook/components": "8.6.12",
     "@storybook/core-events": "5.3.13",
     "@storybook/csf": "0.0.1",
     "@storybook/postinstall": "5.3.13",
